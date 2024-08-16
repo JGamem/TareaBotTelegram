@@ -80,6 +80,7 @@ public class tareaBot extends TelegramLongPollingBot {
                     sendText(id, mensaje);
                 }
             }
+
             System.out.println("Hola " + nombre + " tu nombre es: " + nombre + " " + apellido);
             System.out.println("Enviaste " + messageText);
             System.out.println("Chat ID: " + chatId);
