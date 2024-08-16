@@ -34,7 +34,7 @@ public class tareaBot extends TelegramLongPollingBot {
             if (messageText.equalsIgnoreCase("/start")) {
                 sendImage(chatId, "img/umgLogo.png");
                 sendText(chatId, "¡Ayooo! Bienvenido a mi botcito\n\n" +
-                        "Que pex, te dejo acá las instrucciones:\n" +
+                        "Que onda! te dejo acá las instrucciones:\n\n" +
                         "/info - (Información personal)\n" +
                         "/progra - (Comentarios sobre la clase de programación)\n" +
                         "/hola - (Saludo con la fecha actual)\n" +
@@ -44,7 +44,7 @@ public class tareaBot extends TelegramLongPollingBot {
             }
 
             if (messageText.equalsIgnoreCase("/maven")) {
-                sendText(chatId, "Referencia de maven de telegrambots");
+                sendText(chatId, "Referencia de maven de telegrambots:");
                 sendImage(chatId, "img/MavenTelegrambots.png");
             }
 
@@ -68,7 +68,7 @@ public class tareaBot extends TelegramLongPollingBot {
             else if (messageText.startsWith("/cambio ")) {
                 String[] parts = messageText.split(" ");
                 double euros = Double.parseDouble(parts[1]);
-                double tipoCambio = 8.9;
+                double tipoCambio = 8.90;
                 double quetzales = euros * tipoCambio;
                 sendText(chatId, "Son " + quetzales + " quetzales.");
             }
