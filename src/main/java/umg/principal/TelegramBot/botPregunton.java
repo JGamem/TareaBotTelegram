@@ -18,7 +18,6 @@ public class botPregunton extends TelegramLongPollingBot {
     private final Map<Long, String> seccionActiva = new HashMap<>();
     private final Map<String, String[]> preguntas = new HashMap<>();
 
-
     @Override
     public String getBotUsername() {
         return BotConfiguracion.getBotUsername();
@@ -53,9 +52,6 @@ public class botPregunton extends TelegramLongPollingBot {
             inicioCuestionario(chatId, callbackData);
         }
     }
-
-
-
 
     private void sendMenu(long chatId) {
         SendMessage message = new SendMessage();
